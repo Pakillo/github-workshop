@@ -1,2 +1,5 @@
 # github-workshop
-Developing efficient workflows with git &amp; GitHub
+
+Developing efficient workflows with git & GitHub
+
+
