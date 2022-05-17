@@ -1,0 +1,264 @@
+---
+title: "Efficient workflows with git & GitHub"
+# subtitle: "Nice subtitle here"
+author: "Francisco Rodriguez-Sanchez"
+institute: "https://frodriguezsanchez.net"
+date: "@frod_san"
+aspectratio: 43  # use 169 for wide format
+fontsize: 12pt
+output: 
+  binb::metropolis:
+    keep_tex: no
+    incremental: yes
+    fig_caption: no
+    pandoc_args: ["--lua-filter=hideslide.lua"]
+urlcolor: blue
+linkcolor: blue
+header-includes:
+  - \definecolor{shadecolor}{RGB}{230,230,230}
+  # - \setbeamercolor{frametitle}{bg=black}
+---
+
+
+```{r setup, include=FALSE, cache=FALSE}
+
+library("knitr")
+
+### Chunk options ###
+
+## Text results
+opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, size = 'tiny')
+
+## Code decoration
+opts_chunk$set(tidy = FALSE, comment = NA, highlight = TRUE, prompt = FALSE, crop = TRUE)
+
+# ## Cache
+# opts_chunk$set(cache = TRUE, cache.path = "knitr_output/cache/")
+
+# ## Plots
+# opts_chunk$set(fig.path = "knitr_output/figures/")
+opts_chunk$set(fig.align = 'center', out.width = '90%')
+
+### Hooks ###
+## Crop plot margins
+knit_hooks$set(crop = hook_pdfcrop)
+
+## Reduce font size
+## use tinycode = TRUE as chunk option to reduce code font size
+# see http://stackoverflow.com/a/39961605
+knit_hooks$set(tinycode = function(before, options, envir) {
+  if (before) return(paste0("\n \\", options$size, "\n\n"))
+  else return("\n\n \\normalsize \n")
+  })
+
+```
+
+
+## Version control without git
+
+```{r}
+include_graphics("images/filescomic.png")
+```
+
+## Version control without git
+
+```{r out.width="60%"}
+include_graphics("images/version_control_PhD.png")
+```
+
+## Version control without git
+
+```{r out.width="50%"}
+include_graphics("images/dataNOvc.jpg")
+```
+
+
+## Collaborating without git
+
+You've got email:
+
+> 
+
+> I'm attaching the final dataset to this email. Hope the analysis goes well!
+
+Later:
+
+> 
+> We just found a mistake in the data so I'm attaching the **revised final** dataset. Sorry about that!
+
+
+## Version control with git
+
+```{r}
+include_graphics("images/git_versioning.png")
+```
+
+R. Fitzjohn (https://github.com/richfitz/reproducibility-2014)
+
+
+## Why version control
+
+- Who did what, when, and why
+
+- Record all changes
+
+- Can go back (undo)
+
+- Easy collaboration (GitHub, GitLab...)
+
+
+
+## Distributed version control
+
+```{r}
+include_graphics("images/distributedVCS.png")
+```
+
+\scriptsize J. Bryan (https://doi.org/10.7287/peerj.preprints.3159v2)
+
+
+## Advantages of GitHub / GitLab...
+
+- Project backup (including history)
+
+- Easy collaboration (social coding)
+
+- Project management (issues, task planning...)
+
+- Easy web deployment
+
+- Continuous integration (GitHub Actions)
+
+
+## Automatic data checks, integration & website
+
+```{r out.width="40%"}
+include_graphics("images/commits_GA.png")
+```
+
+
+## Distributed version control
+
+```{r}
+include_graphics("images/github_flow.png")
+```
+
+\scriptsize J. Bryan (https://doi.org/10.7287/peerj.preprints.3159v2)
+
+
+## Commits save snapshots of project
+
+```{r}
+include_graphics("images/commits.png")
+```
+
+\scriptsize J. Bryan (https://doi.org/10.7287/peerj.preprints.3159v2)
+
+
+# Set up
+
+## Sign up on GitHub
+
+https://github.com/
+
+Advice: https://happygitwithr.com/github-acct.html
+
+
+## Install R
+
+https://cran.r-project.org/
+
+## Install RStudio
+
+https://www.rstudio.com/products/rstudio/download/#download
+
+## Install git
+
+https://happygitwithr.com/install-git.html
+
+## Introduce yourself to git
+
+Use same email as GitHub!
+
+```{r eval=FALSE, echo = TRUE}
+install.packages("usethis")
+
+library("usethis")
+
+use_git_config(user.name = "Jane Doe", 
+               user.email = "jane@example.org")
+```
+
+
+## Create and save Personal Access Token (PAT)
+
+```{r eval=FALSE, echo=TRUE}
+usethis::create_github_token()
+```
+
+Will open GitHub webpage
+
+Click 'Generate token' (green button)
+
+Paste and store you PAT:
+
+```{r eval=FALSE, echo=TRUE}
+gitcreds::gitcreds_set()
+```
+
+
+# READY? 
+
+## GitHub solo demo
+
+- Create new repository on GitHub
+
+- Clone on Rstudio
+
+- Write Rmd / R script importing data
+
+- Commit & push
+
+- Add plot
+
+- Commit & push
+
+- See diff
+
+- Open issue (e.g. use ggplot)
+
+- Switch to ggplot, commit (closing issue) & push
+
+- History
+
+- Branching & merging
+
+
+## Collaborating via GitHub
+
+- Issues
+
+- Forks & pull requests
+
+- Granting repository access to collaborators
+
+- Merge conflicts
+
+
+## Sharing reports on GitHub
+
+output: github_document
+
+
+## Website deployment
+
+Repository settings -> Pages
+
+
+## Social network
+
+- Follow
+
+- Star
+
+- Contribute (issues, pull requests)
