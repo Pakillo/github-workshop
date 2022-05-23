@@ -84,8 +84,11 @@ You've got email:
 Later:
 
 > 
+
 > We just found a mistake in the data so I'm attaching the **revised final** dataset. Sorry about that!
 
+
+# Version control with git
 
 ## Version control with git
 
@@ -93,10 +96,12 @@ Later:
 include_graphics("images/git_versioning.png")
 ```
 
-R. Fitzjohn (https://github.com/richfitz/reproducibility-2014)
+\scriptsize R. Fitzjohn (https://github.com/richfitz/reproducibility-2014)
 
 
 ## Why version control
+
+\Large
 
 - Who did what, when, and why
 
@@ -114,10 +119,12 @@ R. Fitzjohn (https://github.com/richfitz/reproducibility-2014)
 include_graphics("images/distributedVCS.png")
 ```
 
-\scriptsize J. Bryan (https://doi.org/10.7287/peerj.preprints.3159v2)
+\scriptsize J. Bryan: [Excuse me, do you have a moment to talk about version control?](https://doi.org/10.7287/peerj.preprints.3159v2)
 
 
 ## Advantages of GitHub / GitLab...
+
+\Large
 
 - Project backup (including history)
 
@@ -132,10 +139,20 @@ include_graphics("images/distributedVCS.png")
 
 ## Automatic data checks, integration & website
 
+```{r out.width="95%"}
+include_graphics("images/white2018.png")
+```
+
+
+
+::: hide
+## Automatic data checks, integration & website
+
 ```{r out.width="40%"}
 include_graphics("images/commits_GA.png")
 ```
 
+:::
 
 ## Distributed version control
 
@@ -143,7 +160,7 @@ include_graphics("images/commits_GA.png")
 include_graphics("images/github_flow.png")
 ```
 
-\scriptsize J. Bryan (https://doi.org/10.7287/peerj.preprints.3159v2)
+\scriptsize J. Bryan: [Excuse me, do you have a moment to talk about version control?](https://doi.org/10.7287/peerj.preprints.3159v2)
 
 
 ## Commits save snapshots of project
@@ -152,10 +169,23 @@ include_graphics("images/github_flow.png")
 include_graphics("images/commits.png")
 ```
 
-\scriptsize J. Bryan (https://doi.org/10.7287/peerj.preprints.3159v2)
+\scriptsize J. Bryan: [Excuse me, do you have a moment to talk about version control?](https://doi.org/10.7287/peerj.preprints.3159v2)
+
+
+
 
 
 # Set up
+
+
+## Set up
+
+https://happygitwithr.com/
+
+https://git-scm.com/
+
+https://github.com/
+
 
 ## Sign up on GitHub
 
