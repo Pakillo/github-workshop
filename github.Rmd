@@ -4,7 +4,7 @@ title: "Efficient workflows with git & GitHub"
 author: "Francisco Rodriguez-Sanchez"
 institute: "https://frodriguezsanchez.net"
 date: "@frod_san"
-aspectratio: 43  # use 169 for wide format
+aspectratio: 169  # use 169 for wide format
 fontsize: 12pt
 output: 
   binb::metropolis:
@@ -54,6 +54,13 @@ knit_hooks$set(tinycode = function(before, options, envir) {
 ```
 
 
+---
+
+Workshop materials:
+
+https://github.com/Pakillo/github-workshop
+
+
 ## Version control without git
 
 ```{r}
@@ -62,13 +69,13 @@ include_graphics("images/filescomic.png")
 
 ## Version control without git
 
-```{r out.width="60%"}
+```{r out.width="55%"}
 include_graphics("images/version_control_PhD.png")
 ```
 
 ## Version control without git
 
-```{r out.width="50%"}
+```{r out.width="45%"}
 include_graphics("images/dataNOvc.jpg")
 ```
 
@@ -124,8 +131,6 @@ include_graphics("images/distributedVCS.png")
 
 ## Advantages of GitHub / GitLab...
 
-\Large
-
 - Project backup (including history)
 
 - Easy collaboration (social coding)
@@ -172,6 +177,13 @@ include_graphics("images/commits.png")
 \scriptsize J. Bryan: [Excuse me, do you have a moment to talk about version control?](https://doi.org/10.7287/peerj.preprints.3159v2)
 
 
+## Collaboration workflow
+
+```{r out.width="99%"}
+include_graphics("images/Ram2013_workflow.png")
+```
+
+\scriptsize [Ram 2013](https://doi.org/10.1186/1751-0473-8-7)
 
 
 
@@ -186,6 +198,8 @@ https://git-scm.com/
 
 https://github.com/
 
+
+::: hide
 
 ## Sign up on GitHub
 
@@ -292,3 +306,23 @@ Repository settings -> Pages
 - Star
 
 - Contribute (issues, pull requests)
+
+:::
+
+## To read more
+
+\footnotesize
+
+- [Excuse me, do you have a moment to talk about version control?](https://doi.org/10.7287/peerj.preprints.3159v2)
+
+- [A Quick Introduction to Version Control with Git and GitHub](https://doi.org/10.1371/journal.pcbi.1004668)
+
+- [Curating Research Assets: A Tutorial on the Git Version Control System](https://doi.org/10.1177%2F2515245918754826)
+
+- [Ten Simple Rules for Taking Advantage of Git and GitHub](https://doi.org/10.1371/journal.pcbi.1004947)
+
+- [Git can facilitate greater reproducibility and increased transparency in science](https://doi.org/10.1186/1751-0473-8-7)
+
+- [Pro Git book](https://git-scm.com/book/en/v2)
+
+
