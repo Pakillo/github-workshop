@@ -150,14 +150,13 @@ include_graphics("images/white2018.png")
 
 
 
-::: hide
 ## Automatic data checks, integration & website
 
 ```{r out.width="40%"}
 include_graphics("images/commits_GA.png")
 ```
 
-:::
+
 
 ## Distributed version control
 
@@ -168,6 +167,7 @@ include_graphics("images/github_flow.png")
 \scriptsize J. Bryan: [Excuse me, do you have a moment to talk about version control?](https://doi.org/10.7287/peerj.preprints.3159v2)
 
 
+
 ## Commits save snapshots of project
 
 ```{r}
@@ -175,6 +175,7 @@ include_graphics("images/commits.png")
 ```
 
 \scriptsize J. Bryan: [Excuse me, do you have a moment to talk about version control?](https://doi.org/10.7287/peerj.preprints.3159v2)
+
 
 
 ## Collaboration workflow
@@ -199,7 +200,7 @@ https://git-scm.com/
 https://github.com/
 
 
-::: hide
+
 
 ## Sign up on GitHub
 
@@ -251,6 +252,41 @@ gitcreds::gitcreds_set()
 ```
 
 
+## GitHub profiles
+
+https:://github.com/Pakillo
+
+```{r fig.align='center', out.width="90%"}
+include_graphics("images/github_profile.png")
+```
+
+Overview, Repositories, Stars, Follow, Sponsor
+
+
+## GitHub Repositories
+
+https:://github.com/Pakillo/grateful
+
+```{r fig.align='center', out.width="90%"}
+include_graphics("images/gh_repo_example.png")
+```
+
+
+## GitHub Repositories
+
+- Code
+- Issues
+- Discussions
+- Project management
+- Wiki
+- Insights
+- Settings
+- Watch
+- Fork
+- Star
+- Commit history
+
+
 # READY? 
 
 ## GitHub solo demo
@@ -289,6 +325,22 @@ gitcreds::gitcreds_set()
 - Merge conflicts
 
 
+## Do not amend previous commit if you already pushed to GitHub
+
+```{r fig.align='center', out.width="90%"}
+include_graphics("images/amend_commit.png")
+```
+
+
+## If it gets too messy...
+
+```{r fig.align='center', out.width="40%"}
+include_graphics("images/xkcd_git_reset.png")
+```
+
+\scriptsize https://xkcd.com/1597/
+
+
 ## Sharing reports on GitHub
 
 output: github_document
@@ -307,7 +359,7 @@ Repository settings -> Pages
 
 - Contribute (issues, pull requests)
 
-:::
+
 
 ## To read more
 
