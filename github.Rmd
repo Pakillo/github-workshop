@@ -309,7 +309,7 @@ include_graphics("images/gh_repo_example.png")
 
 - Switch to ggplot, commit (closing issue) & push
 
-- History
+- History (try [Git History](https://githistory.xyz/))
 
 - Branching & merging
 
@@ -343,7 +343,11 @@ include_graphics("images/xkcd_git_reset.png")
 
 ## Sharing reports on GitHub
 
+```
+---
 output: github_document
+---
+```
 
 
 ## Website deployment
