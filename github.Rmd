@@ -208,6 +208,8 @@ https://github.com/
 
 Advice: https://happygitwithr.com/github-acct.html
 
+Also check out https://education.github.com/ for extra benefits
+
 
 ## Install R
 
@@ -365,9 +367,11 @@ Repository settings -> Pages
 
 
 
-## To read more
+## Learn more
 
 \footnotesize
+
+- [GitHub skills](https://skills.github.com/) 
 
 - [Excuse me, do you have a moment to talk about version control?](https://doi.org/10.7287/peerj.preprints.3159v2)
 
