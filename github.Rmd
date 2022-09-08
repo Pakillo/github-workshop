@@ -343,6 +343,19 @@ include_graphics("images/xkcd_git_reset.png")
 \scriptsize https://xkcd.com/1597/
 
 
+
+## GUIs can be very helpful
+
+https://desktop.github.com/ (Mac, Windows)
+
+https://www.gitkraken.com/ (Mac, Windows, Linux)
+
+```{r fig.align='center', out.width="70%"}
+include_graphics("images/github-desktop.png")
+```
+
+
+
 ## Sharing reports on GitHub
 
 ```
