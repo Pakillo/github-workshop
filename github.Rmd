@@ -110,13 +110,13 @@ include_graphics("images/git_versioning.png")
 
 \Large
 
-- Who did what, when, and why
+- **Who** did **what, when, and why**
 
 - Record all changes
 
-- Can go back (undo)
+- Can go back (**undo**)
 
-- Easy collaboration (GitHub, GitLab...)
+- Easy **collaboration** (GitHub, GitLab...)
 
 
 
@@ -145,7 +145,7 @@ include_graphics("images/distributedVCS.png")
 ## Automatic data checks, integration & website
 
 ```{r out.width="95%"}
-include_graphics("images/white2018.png")
+include_graphics("images/kim2022.png")
 ```
 
 
@@ -156,6 +156,12 @@ include_graphics("images/white2018.png")
 include_graphics("images/commits_GA.png")
 ```
 
+
+## Automatic data checks, integration & website
+
+```{r out.width="95%"}
+include_graphics("images/white2018.png")
+```
 
 
 ## Distributed version control
@@ -279,7 +285,7 @@ include_graphics("images/gh_repo_example.png")
 - Code
 - Issues
 - Discussions
-- Project management
+- Project management ([example](https://github.com/orgs/rstudio/projects/53))
 - Wiki
 - Insights
 - Settings
@@ -299,28 +305,29 @@ include_graphics("images/gh_repo_example.png")
 
 - Write Rmd / R script importing data
 
-- Commit & push
+- **Commit** & **push**
 
-- Add plot
+- Open **issue** (e.g. add plot)
 
-- Commit & push
+- Write code for plot, commit & push
 
-- See diff
+- See **diff**
 
 - Open issue (e.g. use ggplot)
 
-- Switch to ggplot, commit (closing issue) & push
+- Create ggplot **branch**, write code, commit (closing issue) & push
+
+- Create **pull request** & **merge**
 
 - History (try [Git History](https://githistory.xyz/))
 
-- Branching & merging
 
 
 ## Collaborating via GitHub
 
 - Issues
 
-- Forks & pull requests
+- Branches, forks & pull requests
 
 - Granting repository access to collaborators
 
@@ -395,6 +402,8 @@ Repository settings -> Pages
 - [Ten Simple Rules for Taking Advantage of Git and GitHub](https://doi.org/10.1371/journal.pcbi.1004947)
 
 - [Git can facilitate greater reproducibility and increased transparency in science](https://doi.org/10.1186/1751-0473-8-7)
+
+- [Not just for programmers: How GitHub can accelerate collaborative and reproducible research in ecology and evolution](https://doi.org/10.1111/2041-210X.14108)
 
 - [Pro Git book](https://git-scm.com/book/en/v2)
 
